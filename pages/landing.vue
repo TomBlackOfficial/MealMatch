@@ -1,9 +1,9 @@
 <template>
-    <div class="LandingPage w-[1440px] h-[1403px] relative bg-white">
-        <div class="Rectangle23788 w-[1440px] h-[742px] left-0 top-[661px] absolute bg-pink-50"></div>
-        <div class="Rectangle23784 w-[1440px] h-[727px] left-0 top-0 absolute bg-rose-100"></div>
+    <div class="LandingPage w-full h-[1403px] relative bg-white">
+        <div class="Rectangle23788 w-full h-[742px] left-0 top-[661px] absolute bg-pink-50"></div>
+        <div class="Rectangle23784 w-full h-[727px] left-0 top-0 absolute bg-rose-100"></div>
         <img class="Mascot1RedUpscaled1 w-[729px] h-[729px] left-[704px] top-[-13px] absolute" src="~/assets/images/panda.png" />
-        <div class="PickUp w-[1298px] py-2.5 left-[71px] top-[592px] absolute rounded-[10px] justify-between items-start inline-flex">
+        <div class="PickUp w-[1390px] py-2.5 left-[71px] top-[592px] absolute rounded-[10px] justify-between items-start inline-flex">
             <div class="Catalog1 w-[304px] h-[264px] relative">
                 <div class="Rectangle23793 w-[304px] h-[264px] left-0 top-0 absolute bg-stone-50/opacity-70 rounded-[25px] shadow border-2 border-white/opacity-50 backdrop-blur-[20px]"></div>
                 <div class="Name w-[250px] h-[46px] left-[27px] top-[195px] absolute flex-col justify-start items-start gap-1 inline-flex">
@@ -33,7 +33,7 @@
                 <img class="Breakfast3 w-[250px] h-[250px] left-[27px] top-[-51px] absolute" src="~/assets/images/cake.png" />
             </div>
         </div>
-        <div class="NavBarTop w-[1440px] h-[145px] pl-[81px] pr-[1045px] pt-[37px] pb-[38px] left-0 top-0 absolute bg-white/opacity-0 justify-start items-center inline-flex">
+        <div class="NavBarTop w-full h-[145px] pl-[81px] pr-[1045px] pt-[37px] pb-[38px] left-0 top-0 absolute bg-white/opacity-0 justify-start items-center inline-flex">
             <img class="Asset12 w-[314px] h-[70px]" src="~/assets/images/MealMatch_LogoWide.png" />
         </div>
         <div class="Group40 h-[205px] left-[88px] top-[213px] absolute">
@@ -41,13 +41,13 @@
             <div class="TimeIsMoneyWhyWasteIt w-[574.66px] left-0 top-[30px] absolute text-yellow-950 text-[55px] font-normal font-['Baloo'] uppercase leading-[55px]">Time is money,<br/>Why waste it?</div>
             <div class="TheTinderForFoodNewYorkTimes w-[350.56px] left-[1px] top-0 absolute text-stone-800/opacity-50 text-sm font-normal font-['Baloo 2'] leading-[16.97px]">“The Tinder for food” - New York Times</div>
         </div>
-        <div class="Group39 w-[1282.48px] h-[245.75px] left-[79px] top-[997px] absolute">
+        <div class="Group39 w-full h-[245.75px] left-[79px] top-[997px] absolute">
             <div class="AnswerQuestions left-[38.24px] top-[135.15px] absolute text-center text-stone-800 text-2xl font-semibold font-['Plus Jakarta Sans'] leading-9">Answer questions</div>
             <div class="FillOutOurFastAndProprietarySurveyInJustMinutesSoWeCanBetterFitYourNeeds w-[276.48px] h-[62px] left-0 top-[183.75px] absolute text-center text-stone-800 text-sm font-normal font-['Plus Jakarta Sans'] leading-normal">Fill out our fast and proprietary survey in just minutes so we can better fit your needs.</div>
             <div class="Group34 w-[106px] h-[106px] left-[85.24px] top-0 absolute">
                 <div class="Rectangle23787 w-[106px] h-[106px] left-0 top-0 absolute opacity-25 bg-orange-400 rounded-[30px]"></div>
             </div>
-            <div class="Group36 w-[276.48px] h-[245.75px] left-[504px] top-0 absolute">
+            <div class="Group36 w-[276.48px] h-[245.75px] left-[550px] top-0 absolute">
                 <div class="PickARecipe left-[71.78px] top-[135.15px] absolute text-center text-stone-800 text-2xl font-semibold font-['Plus Jakarta Sans'] leading-9">Pick a recipe</div>
                 <div class="SwipeLeftOrRightOnMealOptionsUntilYouFindAMatchForYourCravings w-[276.48px] h-[62px] left-0 top-[183.75px] absolute text-center text-stone-800 text-sm font-normal font-['Plus Jakarta Sans'] leading-normal">Swipe left or right on meal options until you find a match for your cravings.</div>
                 <div class="Group35 w-[106px] h-[106px] left-[85.24px] top-0 absolute">
@@ -55,10 +55,10 @@
                     <div class="AntDesignCalendarFilled w-[45px] h-11 left-[75.50px] top-[31px] absolute origin-top-left rotate-180 justify-center items-center inline-flex"></div>
                 </div>
             </div>
-            <div class="Group36 w-[276.48px] h-[245.75px] left-[1006px] top-0 absolute">
+            <div class="Group36 w-[276.48px] h-[245.75px] left-[1086px] top-0 absolute">
                 <div class="EnjoyYourMeal left-[54.78px] top-[135.15px] absolute text-center text-stone-800 text-2xl font-semibold font-['Plus Jakarta Sans'] leading-9">Enjoy your meal</div>
                 <div class="NowSitBackRelaxAndEnjoyMealAndAllTheTimeYouSavedByUsingMealmatch w-[276.48px] h-[62px] left-0 top-[183.75px] absolute text-center text-stone-800 text-sm font-normal font-['Plus Jakarta Sans'] leading-normal">Now sit back, relax, and enjoy  meal and all the time you saved by using MealMatch.</div>
-                <div class="Rectangle23787 w-[106px] h-[106px] left-[85.24px] top-0 absolute opacity-10 bg-orange-400 rounded-[30px]"></div>
+                <div class="Rectangle23787 w-[106px] h-[106px] left-[85.24px] top-0 absolute opacity-25 bg-orange-400 rounded-[30px]"></div>
             </div>
             <div class="BiCarFrontFill w-[47px] h-[49px] py-[6.12px] left-[1120.74px] top-[28.50px] absolute flex-col justify-center items-center inline-flex"></div>
         </div>
