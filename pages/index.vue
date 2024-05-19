@@ -179,11 +179,13 @@ async function getAiResponses() {
 <template>
     <div class="flex h-screen bg-[#FFE9E2]">
         <main class="container m-auto flex justify-center">
+            <img class="fixed z-50 right-2 -bottom-56 scale-50" src="~/assets/images/Mascot_3.png">
+
             <Carousel class="max-w-5xl flex-grow rounded-3xl">
                 <CarouselContent>
                     <CarouselItem>
                         <Card>
-                            <CardContent class="flex flex-col h-[75vh] items-center justify-between p-6 bg-[#FFF8F5]">
+                            <CardContent class="flex flex-col h-[80vh] items-center justify-between p-6 bg-[#FFF8F5]">
                                 <h2 class="text-4xl font-bold self-start ml-24 mt-8 text-primary">Pick types of cuisines...</h2>
                                 <div class="grid grid-cols-5 gap-4">
                                     <CuisineToggle v-model="store.american" name="American">
@@ -226,7 +228,7 @@ async function getAiResponses() {
 
                     <CarouselItem>
                         <Card>
-                            <CardContent class="flex flex-col h-[75vh] items-center justify-between p-6 bg-[#FFF8F5]">
+                            <CardContent class="flex flex-col h-[80vh] items-center justify-between p-6 bg-[#FFF8F5]">
                                 <h2 class="text-4xl font-bold self-start ml-24 mt-8 text-primary">Pick cost, time and skill-level...</h2>
 
                                 <div class="flex flex-col gap-4 w-1/3">
@@ -276,7 +278,7 @@ async function getAiResponses() {
                     </CarouselItem>
                     <CarouselItem>
                         <Card>
-                            <CardContent class="flex flex-col h-[75vh] items-center justify-between p-6 bg-[#FFF8F5]">
+                            <CardContent class="flex flex-col h-[80vh] items-center justify-between p-6 bg-[#FFF8F5]">
                                 <h2 class="text-4xl font-bold self-start ml-24 mt-8 text-red-500">Pick dietary restrictions...</h2>
                                 <div class="grid grid-cols-4 gap-4">
                                     <Toggle v-model:pressed="store.vegan" variant="outline" class="w-36 h-12 flex flex-col" :class="[store.vegan ? 'border-primary' : '']">
@@ -325,7 +327,7 @@ async function getAiResponses() {
                     </CarouselItem>
                     <CarouselItem>
                         <Card>
-                            <CardContent class="flex flex-col h-[75vh] items-center justify-between p-6 bg-gray-50">
+                            <CardContent class="flex flex-col h-[80vh] items-center justify-between p-6 bg-gray-50">
                                 <h2 class="text-4xl font-bold self-start ml-24 mt-8 text-red-500">Pick dietary preferences...</h2>
                                 <div class="grid grid-cols-4 gap-4">
                                     <Toggle v-model:pressed="lowCal" variant="outline" class="w-36 h-12 flex flex-col" :class="[lowCal ? 'border-primary' : '']">
@@ -373,7 +375,7 @@ async function getAiResponses() {
                     </CarouselItem>
                     <CarouselItem>
                         <Card>
-                            <CardContent class="flex flex-col h-[75vh] items-center justify-between p-6 bg-[#FFF8F5]">
+                            <CardContent class="flex flex-col h-[80vh] items-center justify-between p-6 bg-[#FFF8F5]">
                                 <h2 class="text-4xl font-bold self-start ml-24 mt-8 text-red-500">Deselect unavailable appliances...</h2>
                                 <div class="grid grid-cols-4 gap-4">
                                     <Toggle v-model:pressed="store.oven" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[store.oven ? 'border-primary' : '']">
