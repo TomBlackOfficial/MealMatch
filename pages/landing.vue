@@ -4,28 +4,28 @@
         <div class="Rectangle23784 w-full h-[727px] left-0 top-0 absolute bg-rose-100"></div>
         <img class="Mascot1RedUpscaled1 w-[729px] h-[729px] left-[704px] top-[-13px] absolute" src="~/assets/images/panda.png" />
         <div class="PickUp w-[1390px] py-2.5 left-[71px] top-[592px] absolute rounded-[10px] justify-between items-start inline-flex">
-            <div class="Catalog1 w-[304px] h-[264px] relative">
+            <div class="Catalog1 w-[304px] h-[264px] relative cursor-pointer" @click="navigateTo('/')">
                 <div class="Rectangle23793 w-[304px] h-[264px] left-0 top-0 absolute bg-stone-50/opacity-70 rounded-[25px] shadow border-2 border-white/opacity-50 backdrop-blur-[20px]"></div>
                 <div class="Name w-[250px] h-[46px] left-[27px] top-[195px] absolute flex-col justify-start items-start gap-1 inline-flex">
                     <div class="Breakfast self-stretch grow shrink basis-0 text-center text-stone-800 text-3xl font-extrabold font-['Plus Jakarta Sans'] leading-[45px]">Breakfast</div>
                 </div>
                 <img class="Breakfast3 w-[250px] h-[250px] left-[27px] top-[-51px] absolute" src="~/assets/images/pancakes.png" />
             </div>
-            <div class="Catalog2 w-[304px] h-[264px] relative">
+            <div class="Catalog2 w-[304px] h-[264px] relative cursor-pointer" @click="navigateTo('/')">
                 <div class="Rectangle23793 w-[304px] h-[264px] left-0 top-0 absolute bg-stone-50/opacity-70 rounded-[25px] shadow border-2 border-white/opacity-50 backdrop-blur-[20px]"></div>
                 <div class="Name w-[250px] h-[46px] left-[27px] top-[195px] absolute flex-col justify-start items-start gap-1 inline-flex">
                     <div class="Lunch self-stretch grow shrink basis-0 text-center text-stone-800 text-3xl font-extrabold font-['Plus Jakarta Sans'] leading-[45px]">Lunch</div>
                 </div>
                 <img class="Breakfast3 w-[250px] h-[250px] left-[27px] top-[-51px] absolute" src="~/assets/images/sandwich.png" />
             </div>
-            <div class="Catalog3 w-[304px] h-[264px] relative">
+            <div class="Catalog3 w-[304px] h-[264px] relative cursor-pointer" @click="navigateTo('/')">
                 <div class="Rectangle23793 w-[304px] h-[264px] left-0 top-0 absolute bg-stone-50/opacity-70 rounded-[25px] shadow border-2 border-white/opacity-50 backdrop-blur-[20px]"></div>
                 <div class="Name w-[250px] h-[46px] left-[27px] top-[195px] absolute flex-col justify-start items-start gap-1 inline-flex">
                     <div class="Dinner self-stretch grow shrink basis-0 text-center text-stone-800 text-3xl font-extrabold font-['Plus Jakarta Sans'] leading-[45px]">Dinner</div>
                 </div>
                 <img class="Breakfast3 w-[250px] h-[250px] left-[27px] top-[-51px] absolute" src="~/assets/images/steak.png" />
             </div>
-            <div class="Catalog4 w-[304px] h-[264px] relative">
+            <div class="Catalog4 w-[304px] h-[264px] relative cursor-pointer" @click="navigateTo('/')">
                 <div class="Rectangle23793 w-[304px] h-[264px] left-0 top-0 absolute bg-stone-50/opacity-70 rounded-[25px] shadow border-2 border-white/opacity-50 backdrop-blur-[20px]"></div>
                 <div class="Name w-[250px] h-[46px] left-[27px] top-[195px] absolute flex-col justify-start items-start gap-1 inline-flex">
                     <div class="Dessert self-stretch grow shrink basis-0 text-center text-stone-800 text-3xl font-extrabold font-['Plus Jakarta Sans'] leading-[45px]">Dessert</div>
@@ -63,3 +63,5 @@
         </div>
     </div>
 </template>
+<script setup lang="ts">
+</script>

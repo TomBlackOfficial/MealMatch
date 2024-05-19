@@ -5,6 +5,7 @@ import {ToggleGroup, ToggleGroupItem} from "~/components/ui/toggle-group";
 import {useCreateRecipeStore} from "~/store/createRecipe";
 
 const store = useCreateRecipeStore();
+store.$reset();
 
 const american = ref(false);
 const chinese = ref(false);
