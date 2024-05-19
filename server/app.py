@@ -5,10 +5,9 @@ import recipes
 
 app = Flask(__name__)
 app.register_blueprint(recipes.bp)
-CORS(app)
 cors = CORS(app, resource={
     r"/*": {
-        "origins": "localhost:3000"
+        "origins": "localhost:3000/recipes"
     }
 })
 
