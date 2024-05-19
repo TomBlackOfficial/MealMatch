@@ -148,39 +148,39 @@ const skill = ref<"low" | "medium" | "high" | undefined>();
                                     <Toggle v-model:pressed="vegan" variant="outline" class="w-36 h-12 flex flex-col" :class="[vegan ? 'border-primary' : '']">
                                         <p class="my-2">Vegan</p>
                                     </Toggle>
-                                    <Toggle v-model="vegetarian" variant="outline" class="w-36 h-12 flex flex-col" :class="[vegetarian ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="vegetarian" variant="outline" class="w-36 h-12 flex flex-col" :class="[vegetarian ? 'border-primary' : '']">
                                         <p class="my-2">Vegetarian</p>
                                     </Toggle>
-                                    <Toggle v-model="pescatarian" variant="outline" class="w-36 h-12 flex flex-col" :class="[pescatarian ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="pescatarian" variant="outline" class="w-36 h-12 flex flex-col" :class="[pescatarian ? 'border-primary' : '']">
                                         <p class="my-2">Pescatarian</p>
                                     </Toggle>
 
-                                    <Toggle v-model="kosher" variant="outline" class="w-36 h-12 flex flex-col" :class="[kosher ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="kosher" variant="outline" class="w-36 h-12 flex flex-col" :class="[kosher ? 'border-primary' : '']">
                                         <p class="my-2">Kosher</p>
                                     </Toggle>
-                                    <Toggle v-model="halal" variant="outline" class="w-36 h-12 flex flex-col" :class="[halal ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="halal" variant="outline" class="w-36 h-12 flex flex-col" :class="[halal ? 'border-primary' : '']">
                                         <p class="my-2">Halal</p>
                                     </Toggle>
-                                    <Toggle v-model="keto" variant="outline" class="w-36 h-12 flex flex-col" :class="[keto ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="keto" variant="outline" class="w-36 h-12 flex flex-col" :class="[keto ? 'border-primary' : '']">
                                         <p class="my-2">Keto</p>
                                     </Toggle>
 
-                                    <Toggle v-model="dairyFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[dairyFree ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="dairyFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[dairyFree ? 'border-primary' : '']">
                                         <p class="my-2">Dairy-Free</p>
                                     </Toggle>
-                                    <Toggle v-model="glutenFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[glutenFree ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="glutenFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[glutenFree ? 'border-primary' : '']">
                                         <p class="my-2">Gluten-Free</p>
                                     </Toggle>
-                                    <Toggle v-model="nutFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[nutFree ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="nutFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[nutFree ? 'border-primary' : '']">
                                         <p class="my-2">Nut-Free</p>
                                     </Toggle>
-                                    <Toggle v-model="shellfishFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[shellfishFree ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="shellfishFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[shellfishFree ? 'border-primary' : '']">
                                         <p class="my-2">Shellfish-Free</p>
                                     </Toggle>
-                                    <Toggle v-model="eggFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[eggFree ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="eggFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[eggFree ? 'border-primary' : '']">
                                         <p class="my-2">Egg-Free</p>
                                     </Toggle>
-                                    <Toggle v-model="soyFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[soyFree ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="soyFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[soyFree ? 'border-primary' : '']">
                                         <p class="my-2">Soy-Free</p>
                                     </Toggle>
                                 </div>
@@ -197,27 +197,27 @@ const skill = ref<"low" | "medium" | "high" | undefined>();
                                     <Toggle v-model:pressed="oven" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[oven ? 'border-primary' : '']">
                                         <p class="my-2">Oven</p>
                                     </Toggle>
-                                    <Toggle v-model="microwave" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[microwave ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="microwave" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[microwave ? 'border-primary' : '']">
                                         <p class="my-2">Microwave</p>
                                     </Toggle>
-                                    <Toggle v-model="airFryer" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[airFryer ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="airFryer" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[airFryer ? 'border-primary' : '']">
                                         <p class="my-2">Air Fryer</p>
                                     </Toggle>
 
-                                    <Toggle v-model="stove" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[stove ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="stove" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[stove ? 'border-primary' : '']">
                                         <p class="my-2">Stove</p>
                                     </Toggle>
-                                    <Toggle v-model="BBQ" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[BBQ ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="BBQ" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[BBQ ? 'border-primary' : '']">
                                         <p class="my-2">BBQ</p>
                                     </Toggle>
-                                    <Toggle v-model="slowCooker" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[slowCooker ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="slowCooker" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[slowCooker ? 'border-primary' : '']">
                                         <p class="my-2">Slow Cooker</p>
                                     </Toggle>
 
-                                    <Toggle v-model="blender" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[blender ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="blender" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[blender ? 'border-primary' : '']">
                                         <p class="my-2">Blender</p>
                                     </Toggle>
-                                    <Toggle v-model="pressureCooker" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[pressureCooker ? 'border-primary' : '']">
+                                    <Toggle v-model:pressed="pressureCooker" :default-value = "true" variant="outline" class="w-36 h-12 flex flex-col" :class="[pressureCooker ? 'border-primary' : '']">
                                         <p class="my-2">Pressure Cooker</p>
                                     </Toggle>
                                 </div>
