@@ -14,5 +14,5 @@ cors = CORS(app, resource={
 
 
 @app.route("/", methods=("GET",))
-def maim():
+def main():
     return {"response": "Hello World!"}
