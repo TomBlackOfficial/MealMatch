@@ -18,6 +18,7 @@
     "interactjs": "^1.10.27",
     "lucide-vue-next": "^0.378.0",
     "nuxt": "^3.11.2",
+    "pinia": "^2.1.7",
     "radix-vue": "^1.8.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
@@ -27,6 +28,8 @@
   "devDependencies": {
     "@interactjs/types": "^1.10.27",
     "@nuxtjs/tailwindcss": "^6.12.0",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
+    "@pinia/nuxt": "^0.5.1",
     "shadcn-nuxt": "^0.10.4",
     "typescript": "^5.4.5"
   }
