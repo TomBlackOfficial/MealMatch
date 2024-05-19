@@ -1,6 +1,6 @@
 import os
 
-from flask import Blueprint
+from flask import Blueprint, request
 from openai import OpenAI
 
 bp = Blueprint("recipes", __name__, url_prefix="/recipes")
@@ -29,18 +29,8 @@ Return your responses in a JSON object with the following format:
 
 
 @bp.route("/", methods=("GET",))
-def generate_recipes(
-        cuisine: list[str] | None = None,
-        ingredients: list[str] | None = None,
-        preferences: list[str] | None = None,
-        restrictions: list[str] | None = None,
-        cooking_method: str | list[str] | None = "Any",
-        cost: str | None = "Average",
-        cooking_time: str | None = "Average",
-        skill_level: str | None = "Intermediate",
-) -> str:
-    if ingredients is None:
-        ingredients = ["chicken", "rice", "broccoli"]
+def generate_recipes():
+    args = request.args
     response = client.chat.completions.create(
         model="gpt-3.5-turbo-0125",
         max_tokens=2000,
@@ -49,14 +39,14 @@ def generate_recipes(
             FIRST_SYSTEM_MESSAGE,
             {
                 "role": "user",
-                "content": f"""Cuisine: {cuisine}
-Ingredients: {ingredients}
-Preferences: {preferences}
-Restrictions: {restrictions}
-Cost: {cost}
-Cooking Time: {cooking_time}
-Skill Level: {skill_level}
-Cooking Method: {cooking_method}"""
+                "content": f"""Cuisine: {args.get("cuisine", default="Any")}
+Ingredients: {args.get("ingredients", default=["chicken", "rice", "broccoli"])}
+Preferences: {args.get("preferences", default="Any")}
+Restrictions: {args.get("restrictions", default="None")}
+Cost: {args.get("cost", default="Average")}
+Cooking Time: {args.get("cooking_time", default="Average")}
+Skill Level: {args.get("skill_level", default="Intermediate")}
+Cooking Method: {args.get("cooking_method", default="Any")}"""
             }
         ]
     )
