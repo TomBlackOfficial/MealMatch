@@ -2,7 +2,6 @@
 import { Toggle } from '@/components/ui/toggle'
 import CarouselNextButton from "~/components/ui/carousel/CarouselNextButton.vue";
 import {ToggleGroup, ToggleGroupItem} from "~/components/ui/toggle-group";
-//import {Checkbox} from "~/components/ui/checkbox";
 
 const american = ref(false);
 const chinese = ref(false);
@@ -27,8 +26,6 @@ const nutFree = ref(false);
 const shellfishFree = ref(false);
 const eggFree = ref(false);
 const soyFree = ref(false);
-
-
 
 const cost = ref<"low" | "medium" | "high" | undefined>();
 const time = ref<"low" | "medium" | "high" | undefined>();
@@ -233,7 +230,6 @@ const skill = ref<"low" | "medium" | "high" | undefined>();
                     </CarouselItem>
 
                 </CarouselContent>
-                <CarouselNext />
                 <CarouselPrevious />
             </Carousel>
         </main>
