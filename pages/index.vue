@@ -97,22 +97,22 @@ async function getAiResponses() {
         restrictions.push("Keto");
     }
     if (dairyFree.value) {
-        restrictions.push("DairyFree");
+        restrictions.push("Dairy-Free");
     }
     if (glutenFree.value) {
-        restrictions.push("GlutenFree");
+        restrictions.push("Gluten-Free");
     }
     if (nutFree.value) {
-        restrictions.push("NutFree");
+        restrictions.push("Nut-Free");
     }
     if (shellfishFree.value) {
-        restrictions.push("ShellFish");
+        restrictions.push("Shellfish-Free");
     }
     if (eggFree.value) {
-        restrictions.push("EggFree");
+        restrictions.push("Egg-Free");
     }
     if (soyFree.value) {
-        restrictions.push("SoyFree");
+        restrictions.push("Soy-Free");
     }
 
     if (oven.value) {
@@ -131,13 +131,13 @@ async function getAiResponses() {
         appliances.push("BBQ");
     }
     if (slowCooker.value) {
-        appliances.push("SlowCooker");
+        appliances.push("Slow Cooker");
     }
     if (blender.value) {
         appliances.push("Blender");
     }
     if (pressureCooker.value) {
-        appliances.push("PressureCooker");
+        appliances.push("Pressure Cooker");
     }
 
 
