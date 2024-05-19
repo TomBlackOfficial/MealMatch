@@ -9,7 +9,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 RECIPE_SUGGESTIONS_SYSTEM_MESSAGE = {"role": "system", "content": """You are a professional nutritionist who is creating a meal plan for a client. The client will provide a detailed list of criteria.
 Generate a list of ten unique recipes that match these criteria. The names should be descriptive and appetizing, reflecting the meal type, cuisine, dietary restrictions, cost, preparation time, and skill level.
 The recipes must use the ingredients provided and match the client's preferences. The client's dietary restrictions must be followed.
-Additionally, generate five more recipes that could be made with up to 3 ingredients not provided on the list.
+Additionally, generate five more recipes that has one main ingredient not provided by the client.
 Return your responses in a JSON object with the following format:
 {
   "validRecipes": [
