@@ -120,10 +120,10 @@ console.log(data);
 
 <template>
 <div class="flex bg-[#FFE9E2]">
-  <main class="container m-auto flex flex-col gap-4 justify-center items-center mt-10">
+  <main class="container m-auto flex flex-col gap-4 justify-center items-center my-20">
     <img class="fixed z-50 -right-6 -bottom-56 scale-50" src="~/assets/images/Mascot_4.png">
     <div class="grid grid-cols-2 gap-4 w-2/3">
-      <Card class="px-4 py-10 rounded-2xl" v-for="recipe in data!.validRecipes" :key="recipe.name">
+      <Card class="px-4 pt-10 pb-4 rounded-2xl" v-for="recipe in data!.validRecipes" :key="recipe.name">
       <CardContent>
         <b class="text-2xl">{{ recipe.name }}</b>
         <p>{{ recipe.shortDescription }}</p>
