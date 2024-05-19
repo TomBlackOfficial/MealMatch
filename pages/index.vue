@@ -26,6 +26,7 @@ const nutFree = ref(false);
 const shellfishFree = ref(false);
 const eggFree = ref(false);
 const soyFree = ref(false);
+const treeNuts = ref(false)
 
 const oven = ref(true);
 const microwave = ref(true);
@@ -35,6 +36,24 @@ const BBQ = ref(true);
 const slowCooker = ref(true);
 const blender = ref(true);
 const pressureCooker = ref(true);
+
+const lowCal = ref(false);
+const highProtein = ref(false);
+const highFiber = ref(false);
+const lowSodium = ref(false);
+const lowSugar = ref(false);
+const redMeatFree = ref(false);
+const kidneyFriendly = ref(false);
+const lowCarb = ref(false);
+const alcoholFree = ref(false);
+const oilFree = ref(false);
+const carnivore = ref(false);
+const paleo = ref(false);
+
+
+
+
+
 
 const cost = ref<"low" | "medium" | "high" | undefined>();
 const time = ref<"low" | "medium" | "high" | undefined>();
@@ -273,27 +292,27 @@ async function getAiResponses() {
                                     <Toggle v-model:pressed="halal" variant="outline" class="w-36 h-12 flex flex-col" :class="[halal ? 'border-primary' : '']">
                                         <p class="my-2">Halal</p>
                                     </Toggle>
-                                    <Toggle v-model:pressed="keto" variant="outline" class="w-36 h-12 flex flex-col" :class="[keto ? 'border-primary' : '']">
-                                        <p class="my-2">Keto</p>
+                                    <Toggle v-model:pressed="treeNuts" variant="outline" class="w-36 h-12 flex flex-col" :class="[treeNuts ? 'border-primary' : '']">
+                                        <p class="my-2">Tree-Nuts</p>
                                     </Toggle>
 
                                     <Toggle v-model:pressed="dairyFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[dairyFree ? 'border-primary' : '']">
-                                        <p class="my-2">Dairy-Free</p>
+                                        <p class="my-2">Dairy</p>
                                     </Toggle>
                                     <Toggle v-model:pressed="glutenFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[glutenFree ? 'border-primary' : '']">
-                                        <p class="my-2">Gluten-Free</p>
+                                        <p class="my-2">Gluten</p>
                                     </Toggle>
                                     <Toggle v-model:pressed="nutFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[nutFree ? 'border-primary' : '']">
-                                        <p class="my-2">Nut-Free</p>
+                                        <p class="my-2">Peanut</p>
                                     </Toggle>
                                     <Toggle v-model:pressed="shellfishFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[shellfishFree ? 'border-primary' : '']">
-                                        <p class="my-2">Shellfish-Free</p>
+                                        <p class="my-2">Shellfish</p>
                                     </Toggle>
                                     <Toggle v-model:pressed="eggFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[eggFree ? 'border-primary' : '']">
-                                        <p class="my-2">Egg-Free</p>
+                                        <p class="my-2">Egg</p>
                                     </Toggle>
                                     <Toggle v-model:pressed="soyFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[soyFree ? 'border-primary' : '']">
-                                        <p class="my-2">Soy-Free</p>
+                                        <p class="my-2">Soy</p>
                                     </Toggle>
                                 </div>
 
@@ -335,6 +354,54 @@ async function getAiResponses() {
                                 </div>
 
                                 <Button class="w-1/3" @click="getAiResponses">Submit</Button>
+                            </CardContent>
+                        </Card>
+                    </CarouselItem>
+                    <CarouselItem>
+                        <Card>
+                            <CardContent class="flex flex-col h-[75vh] items-center justify-between p-6 bg-gray-50">
+                                <h2 class="text-4xl font-bold self-start ml-24 mt-8 text-red-500">Pick dietary preferences...</h2>
+                                <div class="grid grid-cols-4 gap-4">
+                                    <Toggle v-model:pressed="lowCal" variant="outline" class="w-36 h-12 flex flex-col" :class="[lowCal ? 'border-primary' : '']">
+                                        <p class="my-2">Low-Calorie</p>
+                                    </Toggle>
+                                    <Toggle v-model:pressed="highProtein" variant="outline" class="w-36 h-12 flex flex-col" :class="[highProtein ? 'border-primary' : '']">
+                                        <p class="my-2">High-Protein</p>
+                                    </Toggle>
+                                    <Toggle v-model:pressed="highFiber" variant="outline" class="w-36 h-12 flex flex-col" :class="[highFiber ? 'border-primary' : '']">
+                                        <p class="my-2">High-Fiber</p>
+                                    </Toggle>
+                                    <Toggle v-model:pressed="lowSodium" variant="outline" class="w-36 h-12 flex flex-col" :class="[lowSodium ? 'border-primary' : '']">
+                                        <p class="my-2">Low-Sodium</p>
+                                    </Toggle>
+                                    <Toggle v-model:pressed="lowSugar" variant="outline" class="w-36 h-12 flex flex-col" :class="[lowSugar ? 'border-primary' : '']">
+                                        <p class="my-2">Low-Sugar</p>
+                                    </Toggle>
+
+                                    <Toggle v-model:pressed="redMeatFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[redMeatFree ? 'border-primary' : '']">
+                                        <p class="my-2">Red Meat-Free</p>
+                                    </Toggle>
+                                    <Toggle v-model:pressed="kidneyFriendly" variant="outline" class="w-36 h-12 flex flex-col" :class="[kidneyFriendly ? 'border-primary' : '']">
+                                        <p class="my-2">Kidney Friendly</p>
+                                    </Toggle>
+                                    <Toggle v-model:pressed="lowCarb" variant="outline" class="w-36 h-12 flex flex-col" :class="[lowCarb ? 'border-primary' : '']">
+                                        <p class="my-2">Low-Carb</p>
+                                    </Toggle>
+                                    <Toggle v-model:pressed="alcoholFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[alcoholFree ? 'border-primary' : '']">
+                                        <p class="my-2">Alcohol-Free</p>
+                                    </Toggle>
+                                    <Toggle v-model:pressed="oilFree" variant="outline" class="w-36 h-12 flex flex-col" :class="[oilFree ? 'border-primary' : '']">
+                                        <p class="my-2">Oil-Free</p>
+                                    </Toggle>
+                                    <Toggle v-model:pressed="carnivore" variant="outline" class="w-36 h-12 flex flex-col" :class="[carnivore ? 'border-primary' : '']">
+                                        <p class="my-2">Carnivore</p>
+                                    </Toggle>
+                                    <Toggle v-model:pressed="paleo" variant="outline" class="w-36 h-12 flex flex-col" :class="[paleo ? 'border-primary' : '']">
+                                        <p class="my-2">Paleo</p>
+                                    </Toggle>
+                                </div>
+
+                                <CarouselNextButton class="w-1/3" />
                             </CardContent>
                         </Card>
                     </CarouselItem>
