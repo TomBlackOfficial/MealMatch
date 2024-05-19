@@ -141,9 +141,14 @@ async function getAiResponses() {
     }
 
 
-    const { data } = await useFetch("http://localhost:5000/recipes/", {
+    const data = await useFetch("http://localhost:5000/recipes/suggestions", {
         query: {
-            cuisine: cuisine
+            cuisine: cuisine,
+            restrictions: restrictions,
+            cost: cost.value,
+            time: time.value,
+            skill: skill.value,
+            cooking_method: appliances
         }
     })
 }
