@@ -34,6 +34,7 @@ Return your response in a JSON object with the following format:
   "name": "Recipe Name",
   "ingredients": ["Ingredient Name 1 and Quantity", "Ingredient Name 2 and Quantity", ...],
   "instructions": ["Step 1", "Step 2", "Step 3", ...]
+  "cookingTime": "Cooking Time",
 }
 """
 
