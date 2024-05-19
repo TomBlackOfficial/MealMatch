@@ -17,7 +17,7 @@ const korean = ref(false);
 
 const vegan = ref(false);
 const vegetarian = ref(false);
-const pescatarian= ref(false);
+const pescatarian = ref(false);
 const  kosher = ref(false);
 const  halal= ref(false);
 const  keto = ref(false);
@@ -145,52 +145,51 @@ const skill = ref<"low" | "medium" | "high" | undefined>();
                     </CarouselItem>
                     <CarouselItem>
                         <Card>
+                            <CardContent class="flex flex-col h-[75vh] items-center justify-between p-6 bg-gray-50">
+                                <h2 class="text-4xl font-bold self-start ml-24 mt-8 text-red-500">Pick dietary restrictions...</h2>
+                                <div class="grid grid-cols-4 gap-4">
+                                    <Toggle v-model:pressed="vegan" variant="outline" class="w-36 h-12 flex flex-col">
+                                        <p class="my-2">Vegan</p>
+                                    </Toggle>
+                                    <Toggle v-model="vegetarian" variant="outline" class="w-36 h-12 flex flex-col">
+                                        <p class="my-2">Vegetarian</p>
+                                    </Toggle>
+                                    <Toggle v-model="pescatarian" variant="outline" class="w-36 h-12 flex flex-col">
+                                        <p class="my-2">Pescatarian</p>
+                                    </Toggle>
 
-                                <CardContent class="flex flex-col h-[75vh] items-center justify-between p-6 bg-gray-50">
-                                    <h2 class="text-4xl font-bold self-start ml-24 mt-8 text-red-500">Pick dietary restrictions...</h2>
-                                    <div class="grid grid-cols-4 gap-4">
-                                        <Toggle v-model:pressed="vegan" variant="outline" class="w-36 h-12 flex flex-col border-[color:var(--primary)]">
-                                            <p class="my-2">Vegan</p>
-                                        </Toggle>
-                                        <Toggle v-model="vegetarian" variant="outline" class="w-36 h-12 flex flex-col">
-                                            <p class="my-2">Vegetarian</p>
-                                        </Toggle>
-                                        <Toggle v-model="pescatarian" variant="outline" class="w-36 h-12 flex flex-col">
-                                            <p class="my-2">Pescatarian</p>
-                                        </Toggle>
+                                    <Toggle v-model="kosher" variant="outline" class="w-36 h-12 flex flex-col">
+                                        <p class="my-2">Kosher</p>
+                                    </Toggle>
+                                    <Toggle v-model="halal" variant="outline" class="w-36 h-12 flex flex-col">
+                                        <p class="my-2">Halal</p>
+                                    </Toggle>
+                                    <Toggle v-model="keto" variant="outline" class="w-36 h-12 flex flex-col">
+                                        <p class="my-2">Keto</p>
+                                    </Toggle>
 
-                                        <Toggle v-model="kosher" variant="outline" class="w-36 h-12 flex flex-col">
-                                            <p class="my-2">Kosher</p>
-                                        </Toggle>
-                                        <Toggle v-model="halal" variant="outline" class="w-36 h-12 flex flex-col">
-                                            <p class="my-2">Halal</p>
-                                        </Toggle>
-                                        <Toggle v-model="keto" variant="outline" class="w-36 h-12 flex flex-col">
-                                            <p class="my-2">Keto</p>
-                                        </Toggle>
+                                    <Toggle v-model="dairyFree" variant="outline" class="w-36 h-12 flex flex-col">
+                                        <p class="my-2">Dairy-Free</p>
+                                    </Toggle>
+                                    <Toggle v-model="glutenFree" variant="outline" class="w-36 h-12 flex flex-col">
+                                        <p class="my-2">Gluten-Free</p>
+                                    </Toggle>
+                                    <Toggle v-model="nutFree" variant="outline" class="w-36 h-12 flex flex-col">
+                                        <p class="my-2">Nut-Free</p>
+                                    </Toggle>
+                                    <Toggle v-model="shellfishFree" variant="outline" class="w-36 h-12 flex flex-col">
+                                        <p class="my-2">Shellfish-Free</p>
+                                    </Toggle>
+                                    <Toggle v-model="eggFree" variant="outline" class="w-36 h-12 flex flex-col">
+                                        <p class="my-2">Egg-Free</p>
+                                    </Toggle>
+                                    <Toggle v-model="soyFree" variant="outline" class="w-36 h-12 flex flex-col">
+                                        <p class="my-2">Soy-Free</p>
+                                    </Toggle>
+                                </div>
 
-                                        <Toggle v-model="dairyFree" variant="outline" class="w-36 h-12 flex flex-col">
-                                            <p class="my-2">Dairy-Free</p>
-                                        </Toggle>
-                                        <Toggle v-model="glutenFree" variant="outline" class="w-36 h-12 flex flex-col">
-                                            <p class="my-2">Gluten-Free</p>
-                                        </Toggle>
-                                        <Toggle v-model="nutFree" variant="outline" class="w-36 h-12 flex flex-col">
-                                            <p class="my-2">Nut-Free</p>
-                                        </Toggle>
-                                        <Toggle v-model="shellfishFree" variant="outline" class="w-36 h-12 flex flex-col">
-                                            <p class="my-2">Shellfish-Free</p>
-                                        </Toggle>
-                                        <Toggle v-model="eggFree" variant="outline" class="w-36 h-12 flex flex-col">
-                                            <p class="my-2">Egg-Free</p>
-                                        </Toggle>
-                                        <Toggle v-model="soyFree" variant="outline" class="w-36 h-12 flex flex-col">
-                                            <p class="my-2">Soy-Free</p>
-                                        </Toggle>
-                                    </div>
-
-                                    <CarouselNextButton class="w-1/3" />
-                                </CardContent>
+                                <CarouselNextButton class="w-1/3" />
+                            </CardContent>
                         </Card>
                     </CarouselItem>
                 </CarouselContent>
