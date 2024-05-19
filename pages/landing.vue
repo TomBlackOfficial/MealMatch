@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="NavBarTop w-[1440px] h-[145px] pl-[81px] pr-[1045px] pt-[37px] pb-[38px] left-0 top-0 absolute bg-white/opacity-0 justify-start items-center inline-flex">
-            <img class="Asset12 w-[314px] h-[70px]" src="~/assets/images/logo.png" />
+            <img class="Asset12 w-[314px] h-[70px]" src="~/assets/images/MealMatch_LogoWide.png" />
         </div>
         <div class="Group40 h-[205px] left-[88px] top-[213px] absolute">
             <div class="FillOutOurSurveyInMinutesThenSwipeLeftOrRightOnCuratedMealsAndRecipesSuitedToYourCravingsAndDietaryRestrictions w-[534px] left-[1px] top-[153px] absolute opacity-40 text-stone-800 text-base font-normal font-['Baloo 2'] leading-relaxed">Fill out our survey in minutes then swipe left or right on curated meals and recipes suited to your cravings and dietary restrictions.</div>
