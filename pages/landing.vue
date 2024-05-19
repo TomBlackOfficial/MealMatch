@@ -34,12 +34,11 @@
             </div>
         </div>
         <div class="NavBarTop w-full h-[145px] pl-[81px] pr-[1045px] pt-[37px] pb-[38px] left-0 top-0 absolute bg-white/opacity-0 justify-start items-center inline-flex">
-            <img class="Asset12 w-[314px] h-[70px]" src="~/assets/images/MealMatch_LogoWide.png" />
+            <img class="Asset12 w-[314px] h-[85px]" src="~/assets/images/MealMatch_LogoWide.png" />
         </div>
         <div class="Group40 h-[205px] left-[88px] top-[213px] absolute">
-            <div class="FillOutOurSurveyInMinutesThenSwipeLeftOrRightOnCuratedMealsAndRecipesSuitedToYourCravingsAndDietaryRestrictions w-[534px] left-[1px] top-[153px] absolute opacity-40 text-stone-800 text-base font-normal font-['Baloo 2'] leading-relaxed">Fill out our survey in minutes then swipe left or right on curated meals and recipes suited to your cravings and dietary restrictions.</div>
+            <div class="FillOutOurSurveyInMinutesThenSwipeLeftOrRightOnCuratedMealsAndRecipesSuitedToYourCravingsAndDietaryRestrictions w-[534px] left-[1px] top-[153px] absolute opacity-40 text-stone-800 text-base font-normal font-['Baloo 2'] leading-relaxed">Your recipe wizard! Select your tastes, answer quick questions, and bam! Personalized recipes ready to save you time and tantalize your taste buds. Say hello to hassle-free meals with MealMatch!</div>
             <div class="TimeIsMoneyWhyWasteIt w-[574.66px] left-0 top-[30px] absolute text-yellow-950 text-[55px] font-normal font-['Baloo'] uppercase leading-[55px]">Time is money,<br/>Why waste it?</div>
-            <div class="TheTinderForFoodNewYorkTimes w-[350.56px] left-[1px] top-0 absolute text-stone-800/opacity-50 text-sm font-normal font-['Baloo 2'] leading-[16.97px]">“The Tinder for food” - New York Times</div>
         </div>
         <div class="Group39 w-full h-[245.75px] left-[79px] top-[997px] absolute">
             <div class="AnswerQuestions left-[38.24px] top-[135.15px] absolute text-center text-stone-800 text-2xl font-semibold font-['Plus Jakarta Sans'] leading-9">Answer questions</div>
