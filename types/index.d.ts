@@ -14,10 +14,23 @@ declare global {
         validRecipes: {
             name: string,
             shortDescription: string,
+            mainIngredients: string[],
+            nutrition: {
+                calories: string,
+                protein: string,
+                carbohydrates: string,
+                fat: string,
+            },
         }[],
         additionalRecipes: {
             name: string,
             shortDescription: string,
+            nutrition: {
+                calories: string,
+                protein: string,
+                carbohydrates: string,
+                fat: string,
+            },
         }[],
     }
 

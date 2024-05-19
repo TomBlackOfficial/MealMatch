@@ -16,12 +16,26 @@ Return your responses in a JSON object with the following format:
     {
       "name": "Recipe Name",
       "shortDescription": "Short Recipe Description",
+      "mainIngredients": ["Main Ingredient 1", "Main Ingredient 2", "Main Ingredient 3", ...],
+      "nutrition": {
+        "calories": "Calories",
+        "protein": "Protein",
+        "carbohydrates": "Carbohydrates",
+        "fat": "Fat",
+      }
     }
   ]
   "additionalRecipes": [
     {
       "name": "Recipe Name",
       "shortDescription": "Short Recipe Description",
+      "mainIngredients": ["Main Ingredient 1", "Main Ingredient 2", "Main Ingredient 3", ...],
+      "nutrition": {
+        "calories": "Calories",        
+        "protein": "Protein",
+        "carbohydrates": "Carbohydrates",
+        "fat": "Fat",
+      }
     }
   ]
 }
