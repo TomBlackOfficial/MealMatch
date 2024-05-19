@@ -42,6 +42,9 @@ const skill = ref<"low" | "medium" | "high" | undefined>();
 
 async function getAiResponses() {
     let cuisine = [];
+    let restrictions = [];
+    let appliances = [];
+
     if (american.value) {
         cuisine.push("American");
     }
@@ -51,6 +54,92 @@ async function getAiResponses() {
     if (japanese.value) {
         cuisine.push("Japanese");
     }
+    if (indian.value) {
+        cuisine.push("Japanese");
+    }
+    if (greek.value) {
+        cuisine.push("Japanese");
+    }
+    if (mexican.value) {
+        cuisine.push("Japanese");
+    }
+    if (italian.value) {
+        cuisine.push("Japanese");
+    }
+    if (thai.value) {
+        cuisine.push("Japanese");
+    }
+    if (vietnamese.value) {
+        cuisine.push("Japanese");
+    }
+    if (korean.value) {
+        cuisine.push("Japanese");
+    }
+
+
+
+    if (vegan.value) {
+        restrictions.push("Japanese");
+    }
+    if (vegetarian.value) {
+        restrictions.push("Japanese");
+    }
+    if (pescatarian.value) {
+        restrictions.push("Japanese");
+    }
+    if (kosher.value) {
+        restrictions.push("Japanese");
+    }
+    if (halal.value) {
+        restrictions.push("Japanese");
+    }
+    if (keto.value) {
+        restrictions.push("Japanese");
+    }
+    if (dairyFree.value) {
+        restrictions.push("Japanese");
+    }
+    if (glutenFree.value) {
+        restrictions.push("Japanese");
+    }
+    if (nutFree.value) {
+        restrictions.push("Japanese");
+    }
+    if (shellfishFree.value) {
+        restrictions.push("Japanese");
+    }
+    if (eggFree.value) {
+        restrictions.push("Japanese");
+    }
+    if (soyFree.value) {
+        restrictions.push("Japanese");
+    }
+
+    if (oven.value) {
+        appliances.push("Japanese");
+    }
+    if (microwave.value) {
+        appliances.push("Japanese");
+    }
+    if (airFryer.value) {
+        appliances.push("Japanese");
+    }
+    if (stove.value) {
+        appliances.push("Japanese");
+    }
+    if (BBQ.value) {
+        appliances.push("Japanese");
+    }
+    if (slowCooker.value) {
+        appliances.push("Japanese");
+    }
+    if (blender.value) {
+        appliances.push("Japanese");
+    }
+    if (pressureCooker.value) {
+        appliances.push("Japanese");
+    }
+
 
     const { data } = await useFetch("http://localhost:5000/recipes/", {
         query: {
