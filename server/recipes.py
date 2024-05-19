@@ -50,7 +50,7 @@ def get_recipe_suggestions():
             {
                 "role": "user",
                 "content": f"""Cuisine: {args.get("cuisine", default="Any")}
-Ingredients: {args.get("ingredients", default=["chicken", "rice", "broccoli"])}
+Ingredients: {args.get("ingredients", default="Any")}
 Preferences: {args.get("preferences", default="Any")}
 Restrictions: {args.get("restrictions", default="None")}
 Cost: {args.get("cost", default="Average")}
@@ -77,6 +77,7 @@ def get_recipe_details():
                 "role": "user",
                 "content": f"""Name: {args.get("name", default="Chicken Alfredo")}
 Description: {args.get("description", default="A creamy pasta dish with chicken and broccoli.")}
+Ingredients: {args.get("ingredients", default="Any")}
 Preferences: {args.get("preferences", default="Any")}
 Restrictions: {args.get("restrictions", default="None")}
 Cost: {args.get("cost", default="Average")}
