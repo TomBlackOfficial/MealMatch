@@ -2,7 +2,6 @@
 import { Toggle } from '@/components/ui/toggle'
 import CarouselNextButton from "~/components/ui/carousel/CarouselNextButton.vue";
 import {ToggleGroup, ToggleGroupItem} from "~/components/ui/toggle-group";
-import {Checkbox} from "~/components/ui/checkbox";
 
 const american = ref(false);
 const chinese = ref(false);
@@ -40,6 +39,25 @@ const pressureCooker = ref(true);
 const cost = ref<"low" | "medium" | "high" | undefined>();
 const time = ref<"low" | "medium" | "high" | undefined>();
 const skill = ref<"low" | "medium" | "high" | undefined>();
+
+async function getAiResponses() {
+    let cuisine = [];
+    if (american.value) {
+        cuisine.push("American");
+    }
+    if (chinese.value) {
+        cuisine.push("Chinese");
+    }
+    if (japanese.value) {
+        cuisine.push("Japanese");
+    }
+
+    const { data } = await useFetch("http://localhost:5000/recipes/", {
+        query: {
+            cuisine: cuisine
+        }
+    })
+}
 </script>
 
 <template>
@@ -99,13 +117,13 @@ const skill = ref<"low" | "medium" | "high" | undefined>();
                                     <p class="font-bold">Cost</p>
                                     <ToggleGroup v-model="cost" type="single" variant="outline">
                                         <ToggleGroupItem value="low" class="flex-grow">
-                                            Low Cost
+                                            Cheap
                                         </ToggleGroupItem>
                                         <ToggleGroupItem value="medium" class="flex-grow">
-                                            Average Cost
+                                            Average
                                         </ToggleGroupItem>
                                         <ToggleGroupItem value="high" class="flex-grow">
-                                            High Cost
+                                            Expensive
                                         </ToggleGroupItem>
                                     </ToggleGroup>
 
@@ -222,7 +240,7 @@ const skill = ref<"low" | "medium" | "high" | undefined>();
                                     </Toggle>
                                 </div>
 
-                                <CarouselNextButton class="w-1/3" />
+                                <Button class="w-1/3" @click="getAiResponses">Submit</Button>
                             </CardContent>
                         </Card>
                     </CarouselItem>
