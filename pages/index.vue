@@ -55,89 +55,89 @@ async function getAiResponses() {
         cuisine.push("Japanese");
     }
     if (indian.value) {
-        cuisine.push("Japanese");
+        cuisine.push("Indian");
     }
     if (greek.value) {
-        cuisine.push("Japanese");
+        cuisine.push("Greek");
     }
     if (mexican.value) {
-        cuisine.push("Japanese");
+        cuisine.push("Mexican");
     }
     if (italian.value) {
-        cuisine.push("Japanese");
+        cuisine.push("Italian");
     }
     if (thai.value) {
-        cuisine.push("Japanese");
+        cuisine.push("Thai");
     }
     if (vietnamese.value) {
-        cuisine.push("Japanese");
+        cuisine.push("Vietnamese");
     }
     if (korean.value) {
-        cuisine.push("Japanese");
+        cuisine.push("Korean");
     }
 
 
 
     if (vegan.value) {
-        restrictions.push("Japanese");
+        restrictions.push("Vegan");
     }
     if (vegetarian.value) {
-        restrictions.push("Japanese");
+        restrictions.push("Vegetarian");
     }
     if (pescatarian.value) {
-        restrictions.push("Japanese");
+        restrictions.push("Pescatarian");
     }
     if (kosher.value) {
-        restrictions.push("Japanese");
+        restrictions.push("Kosher");
     }
     if (halal.value) {
-        restrictions.push("Japanese");
+        restrictions.push("Halal");
     }
     if (keto.value) {
-        restrictions.push("Japanese");
+        restrictions.push("Keto");
     }
     if (dairyFree.value) {
-        restrictions.push("Japanese");
+        restrictions.push("DairyFree");
     }
     if (glutenFree.value) {
-        restrictions.push("Japanese");
+        restrictions.push("GlutenFree");
     }
     if (nutFree.value) {
-        restrictions.push("Japanese");
+        restrictions.push("NutFree");
     }
     if (shellfishFree.value) {
-        restrictions.push("Japanese");
+        restrictions.push("ShellFish");
     }
     if (eggFree.value) {
-        restrictions.push("Japanese");
+        restrictions.push("EggFree");
     }
     if (soyFree.value) {
-        restrictions.push("Japanese");
+        restrictions.push("SoyFree");
     }
 
     if (oven.value) {
-        appliances.push("Japanese");
+        appliances.push("Oven");
     }
     if (microwave.value) {
-        appliances.push("Japanese");
+        appliances.push("Microwave");
     }
     if (airFryer.value) {
-        appliances.push("Japanese");
+        appliances.push("AirFryer");
     }
     if (stove.value) {
-        appliances.push("Japanese");
+        appliances.push("Stove");
     }
     if (BBQ.value) {
-        appliances.push("Japanese");
+        appliances.push("BBQ");
     }
     if (slowCooker.value) {
-        appliances.push("Japanese");
+        appliances.push("SlowCooker");
     }
     if (blender.value) {
-        appliances.push("Japanese");
+        appliances.push("Blender");
     }
     if (pressureCooker.value) {
-        appliances.push("Japanese");
+        appliances.push("PressureCooker");
     }
 
 
