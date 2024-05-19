@@ -180,7 +180,7 @@ async function getAiResponses() {
 <template>
     <div class="flex h-screen bg-[#FFE9E2] ">
         <main class="container m-auto flex justify-center">
-            <img class="fixed z-50 right-2 -bottom-56 scale-50" src="~/assets/images/Mascot_3.png">
+            <img class="fixed z-50 -right-6 -bottom-56 scale-50" src="~/assets/images/Mascot_3.png">
 
             <Carousel class="max-w-5xl flex-grow rounded-3xl">
                 <CarouselContent>

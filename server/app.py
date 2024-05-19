@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.register_blueprint(recipes.bp)
 cors = CORS(app, resource={
     r"/*": {
-        "origins": "localhost:3000/recipes"
+        "origins": "http://localhost:3000"
     }
 })
 
