@@ -27,7 +27,7 @@ Return your responses in a JSON object with the following format:
 }
 """}
 
-RECIPE_DETAILS_SYSTEM_MESSAGE = f"""You are a professional nutritionist who is creating a meal plan for a client. The client will provide a name of a recipe and a short description that was generated based on a detailed list of criteria.
+RECIPE_DETAILS_SYSTEM_MESSAGE = {"role": "system", "content": """You are a professional nutritionist who is creating a meal plan for a client. The client will provide a name of a recipe and a short description that was generated based on a detailed list of criteria.
 Generate a the full list of ingredients and instructions for the recipe. The recipe should match the client's preferences and dietary restrictions.
 Return your response in a JSON object with the following format:
 {
@@ -36,7 +36,7 @@ Return your response in a JSON object with the following format:
   "instructions": ["Step 1", "Step 2", "Step 3", ...]
   "cookingTime": "Cooking Time",
 }
-"""
+"""}
 
 
 @bp.route("/suggestions", methods=("GET",))
